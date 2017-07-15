@@ -15,14 +15,14 @@ df_lr = pd.read_csv(cfg.data_path + 'tfidf_stack_20W.csv')
 df_dm = pd.read_csv(cfg.data_path + 'dmd2v_stack_20W.csv')
 df_dbow = pd.read_csv(cfg.data_path + 'dbowd2v_stack_20W.csv')
 
-df_lb = pd.read_csv(cfg.data_path + 'all.csv',usecols=['Id','Education','age','gender'],nrows=200000)
+df_lb = pd.read_csv(cfg.data_path + 'all_v2.csv',usecols=['Id','Education','age','gender'],nrows=200000)
 ys = {}
 for lb in ['Education','age','gender']:
     ys[lb] = np.array(df_lb[lb])
 
 '''最好的参数组合'''
 #-------------------------education----------------------------------
-TR = 80000
+TR = 100000
 df_sub = pd.DataFrame()
 df_sub['Id'] = df_lb.iloc[TR:]['Id']
 seed = 10
@@ -155,4 +155,4 @@ bst = xgb.train(params, dtrain, n_trees, evals=watchlist,feval=xgb_acc_score,max
 df_sub['gender'] = np.argmax(bst.predict(dvalid),axis=1)+1
 
 df_sub = df_sub[['Id','age','gender','Education']]
-df_sub.to_csv(cfg.data_path + 'tfidf_dm_dbow_10W.csv',index=None,header=None,sep=' ')
+df_sub.to_csv(cfg.data_path + 'tfidf_dm_dbow_20W.csv',index=None,header=None,sep=' ')

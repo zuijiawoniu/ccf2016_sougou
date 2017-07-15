@@ -1,7 +1,13 @@
 ## 2016CCF [大数据精准营销中搜狗用户画像挖掘](http://www.wid.org.cn/data/science/player/competition/detail/description/239)  final winner solution
 
-###李恒超、李裕礞、王安然、钱凌飞、任璐 
-###大连理工大学信息检索实验室
+
+李恒超、[李裕礞](https://github.com/liyumeng)、王安然、钱凌飞、任璐
+
+大连理工大学信息检索实验室
+
+赛题描述
+=====
+[大数据精准营销中搜狗用户画像挖掘 赛题描述](https://github.com/liyumeng/ccf2016_sougou/wiki/%E5%A4%A7%E6%95%B0%E6%8D%AE%E7%B2%BE%E5%87%86%E8%90%A5%E9%94%80%E4%B8%AD%E6%90%9C%E7%8B%97%E7%94%A8%E6%88%B7%E7%94%BB%E5%83%8F%E6%8C%96%E6%8E%98-%E8%B5%9B%E9%A2%98%E6%8F%8F%E8%BF%B0)
 
 重现实验
 ========
@@ -34,5 +40,15 @@ https://pan.baidu.com/s/1bpGIfxX
 =======
 如果觉得不错的话，欢迎大家点击右上角的star和fork,谢谢！
 
-![](docs/队旗.jpg)
+[算法说明文档下载](docs/搜狗用户画像竞赛_算法说明文档.docx)
+
+我们参加的其他竞赛：
+
+[2nd Place Solution for SMP CUP 2016](https://github.com/liyumeng/SmpCup2016)
+
+[1st Place Solution for 2016CCF大数据竞赛客户画像赛题(用户画像)](https://github.com/feidapeng/2016CCF_StateGrid_UserProfile)
+
+[Tsinghua Data Science Winter School 2017 Link Prediction](https://github.com/liyumeng/LinkPrediction)
+
+![](data/队旗.jpg)
 
